@@ -16,17 +16,18 @@ const pageStyles = {
 }
 
 const headingStyles = {
-  fontSize: "52px",
+  fontSize: "28px",
   marginTop: 0,
-  marginBottom: 64,
+  marginBottom: 32,
   textAlign: "center",
 }
 
 const h2Styles = {
-  fontSize: "36px",
+  fontSize: "18px",
 }
 
 const imgWrapperStyles = {
+  marginBottom: 25,
   textAlign: "center",
 }
 
@@ -68,12 +69,12 @@ const IndexPage = () => {
       </Helmet>
       <div id="content">
         <title>Greenland Co-op Summer 2022 Work Term Report</title>
-        
-        <h1 style={headingStyles}>Greenland Co-op Summer 2022 Work Term Report</h1>
 
         <div style={imgWrapperStyles}>
           <img src={logo} style={logoStyles} alt="Greenland Logo" />
         </div>
+        
+        <h1 style={headingStyles}>Greenland Co-op Summer 2022 Work Term Report</h1>
 
         <h2 style={h2Styles}>Introduction</h2>
 

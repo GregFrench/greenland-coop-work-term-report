@@ -1,16 +1,14 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import logo from "../images/cast-logo.jpg"
-import jestIcon from "../images/jest-icon.png"
-import reactIcon from "../images/react-icon.png"
-import communicationIcon from "../images/communication-icon.png"
-import postgresIcon from "../images/postgres-icon.png"
-import dsaIcon from "../images/dsa-icon.png"
-import cleanCodeIcon from "../images/clean-code-icon.png"
+import logo from "../images/greenland-logo.png"
+import loadBalancerIcon from "../images/load-balancer-icon.jpg"
+import optimizationIcon from "../images/optimization-icon.png"
+import applicationIcon from "../images/application-icon.jpg"
+import threatsAirQualityAlberta from "../images/threats-air-quality-alberta.png"
 
 // styles
 const pageStyles = {
-  backgroundColor: "#eee",
+  backgroundColor: "#FFFFFF",
   color: "#232129",
   paddingBottom: 50,
   paddingTop: 50,
@@ -18,7 +16,7 @@ const pageStyles = {
 }
 
 const headingStyles = {
-  fontSize: "56px",
+  fontSize: "52px",
   marginTop: 0,
   marginBottom: 64,
   textAlign: "center",
@@ -49,100 +47,93 @@ const goalStyles = {
   display: "flex",
 }
 
+const threatsFigCaption = {
+  marginTop: 10,
+  textAlign: "center",
+};
+
+const threatsImgStyles = {
+  display: "block",
+  margin: "auto",
+  maxWidth: "75%",
+}
+
 // markup
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Cast Co-op 2021 Work Term Report</title>
+        <title>Greenland Co-op Summer 2022 Work Term Report</title>
       </Helmet>
       <div id="content">
-        <title>Cast Co-op 2021 Work Term Report</title>
+        <title>Greenland Co-op Summer 2022 Work Term Report</title>
         
-        <h1 style={headingStyles}>Cast Co-op 2021 Work Term Report</h1>
+        <h1 style={headingStyles}>Greenland Co-op Summer 2022 Work Term Report</h1>
 
         <div style={imgWrapperStyles}>
-          <img src={logo} style={logoStyles} alt="Cast Logo" />
+          <img src={logo} style={logoStyles} alt="Greenland Logo" />
         </div>
 
         <h2 style={h2Styles}>Introduction</h2>
 
-        <p>Hi, I'm Greg. I'm a Bachelor of Computing co-op student at the University of Guelph currently studying computer science. Over the past Summer and Fall of 2021, I've been working as a co-op student at a social media startup called Cast. The following contains a brief overview of my experience.</p>
+        <p>Hi, I'm Greg. I'm a Bachelor of Computing co-op student at the University of Guelph currently studying computer science. Over the past Summer of 2022, I've been working as a co-op student at Greenland International, an engineering consulting firm based in Collingwood Ontario. The following contains a brief overview of my experience.</p>
 
-        <h2 style={h2Styles}>About Cast</h2>
+        <h2 style={h2Styles}>About Greenland</h2>
 
-        <p>Cast was a social media company founded in 2020 located in the heart of downtown Toronto. It was primarily a mobile application that ran on both Android and iOS. The app's main core concept was built around social voting that allowed people to share their opinions on various topics and have people vote on those topics anonymously. These topics could range anywhere from social issues to politics to sports and even dating. Whatever was on someone's mind, they could ask it and people around the world could vote on it. Since Cast was founded during the Covid-19 pandemic, the company was remote-first by default but had an office downtown Toronto where employees could meet, hang out, and discuss strategy. I ended up visiting the office twice. Once to meet with the engineering team to discuss preliminary plans for the development of Cast V2, a newer and sleeker version of the app, and another to meet with the entire team right before the official launch of V2 at the end of the summer. The company also held two early morning daily standups over Google Meet, one for the engineering team, and one for the marketing team. On top of that, there were also weekly one-on-one meetings with each member of the team, meaning that each person would meet with every other person on the team virtually at least one time per week. This allowed each team member to discuss in-depth details of what they were working on to keep everyone in the loop. Unfortunately, the company folded in November of 2021 due to budgetary reasons and concerns that the app was not growing as fast enough as the founders had hoped.</p>
+        <p>Greenland has several offices located in Southern Ontario, with its main office located in Collingwood. The company works on many different engineering projects in collaboration with individuals across governments, industry, and academia. The organization is split into several different divisions and teams. I was a member of the software team, working remotely from home. The software team at Greenland originally worked out of both the Collingwood office and the Communitech Hub in Waterloo but has since transitioned to working entirely remotely since the start of the Covid-19 pandemic. The team primarily communicates over Microsoft Teams and occasionally meets over voice chat to discuss feature updates as well as to discuss the product roadmap. The team also has bi-weekly meetings with the CEO to give status updates on everything that was worked on and completed in the past two weeks, as well as give product demonstrations for any recently completed and polished features.</p>
 
         <h2 style={h2Styles}>Job Description</h2>
 
-        <p>I was originally hired on with the company to do software QA. This would entail both manually testing the app as well as writing automated unit tests. The job quickly transitioned into more of a software engineering role as I took on more and more software-related tasks on top of the testing work I was doing at the time. This entailed working on the frontend mobile application using React Native and working on the backend using Node.js in conjunction with both a Postgresql database as well as Google Firestore. Some of the projects I worked on at Cast include, but are not limited to, revamping user profiles for Cast V2, building out the re-cast feature for users to re-cast other peoples casts, building the expiring cast feature that enabled users to set a time on their casts when people are no longer allowed to vote, and building out admin dashboard tools for better reporting and analysis to improve user experience.</p>
+        <p>As a software developer, I had many different responsibilities. For the first month of the work term, I was tasked with working with the Robotics Institute at the University of Guelph on an accessibility project that had been in the works for many years. I had initially assisted with this project back in 2018/2019, but the project was ultimately put on hold due to Covid and other financial reasons. With the project being recently revived, I was asked by Dr. Hussein Abdullah if I could start working on the project again. The fact that Greenland was involved in the development of the project, and the fact that I was now working for Greenland meant that I was able to continue working on the project for the first month of my work term. This work involved getting the core mobile application to work with all the latest library updates of the libraries that the application depended on, transitioning the React Native mobile application to use functional components, rather than class-based components, getting the frontend analytics dashboard and Node backend to work with the latest versions of Node.js, adding migrations to the Postgresql database, and porting the software over to the cloud to enable it to be used as a public-facing application.</p>
+
+        <p>
+          <figure>
+            <img src={threatsAirQualityAlberta} style={threatsImgStyles} alt="THREATS - Air Quality Alberta" />
+            <figcaption style={threatsFigCaption}><em>THREATS: Air Quality - Alberta Tool</em></figcaption>
+          </figure>
+        </p>
+
+        <p>After I was finished with my work at the University, I started working directly with the software team at Greenland on the THREATS platform. THREATS is an online visualization tool used to visualize environmental data over time. This ranges anywhere from the monitoring of air/water quality and the effects of different chemicals in the air/water, to monitoring oil pipeline spills and their effect on wildlife. My first major task was to go through THREATS and find potential ways of optimizing the platform. This was due to the fact some of the aspects of the application had gotten quite slow due to adding on more and more features over time, as well as the sheer amount of data that needed to be processed and displayed to the user. Some of the improvements I was able to implement included adding in Redis caching of database calls and API endpoints to drastically reduce the time it took to fetch results that had been previously computed, freeing up resources used by tools that the user was not currently using, and removing unnecessary and expensive endpoint calls that were being called regardless of whether a user was using that specific feature or not. The second major task was to run distributed load tests on the application. This involved recording actions taken in the app, converting them into JMeter scripts, and then using distributed load testing software from AWS to simulate many concurrent users using the app, going through the actions recorded in the script. The servers were then monitored to see just how many users the servers could handle before the CPU usage started peaking at close to 100% capacity. The third and final major task was to set up load balancers for the application. This involved setting up load balancers for the two main application instances as well as the database instance. This involved quite the learning curve as I had never done anything like this before. This resulted in successfully setting up a load balancer for the frontend instance while giving an easy pathway to setting up load balancers for the backend instances when the time comes. The database instances were a lot more challenging though simply due to the fact of requiring data replication of close to a terabyte worth of data. Add on to the fact of needing data synchronization across the database instances, meaning that when you write to one database, the other database(s) need to receive that write also. It was ultimately decided that it would be better to optimize the database and the SQL queries on the database rather than add load balancing to the database instances themselves. This is work that is still ongoing to this day.</p>
 
         <h2 style={h2Styles}>Goals</h2>
 
-        <p>During my time at Cast, I developed 6 learning goals. Goals that I could strive for to help make me a better developer, and a better professional in the software industry. Here is a brief overview of those goals along with my progress in achieving them.</p>
+        <p>At the start of my tenure at Greenland, I developed 3 main learning goals. These goals would help guide my work term in terms of what the major focus of my work would be on, and how to make myself a better overall developer. Here is a brief overview of those goals along with my progress in achieving them.</p>
 
         <div style={goalStyles}>
           <div style={goalImgContainerStyles}>
-           <p><img src={jestIcon} style={goalImgStyles} alt="Jest Icon" /></p>
+           <p><img src={loadBalancerIcon} style={goalImgStyles} alt="Load Balancing Icon" /></p>
           </div>
           <div>
-            <p><strong>Write automated unit tests that cover the entire Cast mobile application -</strong> the purpose of this goal was to improve my ability to write automated unit tests and gain more experience using frontend unit testing tools such as Jest and React Testing Library. While I wasn’t able to test the entire system due to my role switching more to a software engineering role, I was able to write automated tests for large parts of the application which helped to keep those components of the application consistent and bug-free.</p>
+            <p><strong>Improve my system design skills -</strong> the purpose of this goal was to improve my overall system design skills. These skills are needed when transitioning from a junior developer into the role of a senior developer. Throughout the term, I was able to greatly improve my caching skills, caching API requests and database calls to achieve orders of magnitude in terms of overall speed increase. For example, some of the database calls were taking 2+ minutes to complete on average. Utilizing Redis caching, I was able to bring these requests down to 0.5 seconds once the request is fully cached. On top of this, I was also allowed to dive deep into load balancing. Load balancing is an extremely important part of system design, especially as an application starts scaling up to more and more users. Using tools that come with AWS, I was able to successfully integrate load balancing on top of their existing EC2 instances as well as add CodeDeploy to seamlessly deploy code to multiple load-balanced instances without having to manually deploy code to each one.</p>
           </div>
         </div>
 
         <div style={goalStyles}>
           <div style={goalImgContainerStyles}>
-            <p><img src={reactIcon} style={goalImgStyles} alt="React Icon" /></p>
+            <p><img src={optimizationIcon} style={goalImgStyles} alt="Optimization Icon" /></p>
           </div>
           <div>
-          <p><strong>Achieve expertise in React -</strong> React is an incredibly valuable skill to know and since one of the core technologies used at Cast was React Native, I thought it would be worth my time to spend time digging deep into the core features of React to learn as much as possible about the technology. This would not only make me a valuable contributor to the engineering team at Cast but also any future company that I work with that uses React. Overall, I ended up seeing my React skills grow tremendously and was able to obtain a solid grasp of the core concepts. I now feel a lot more comfortable building out apps and features with it.</p>
+          <p><strong>Improve application optimization skills -</strong> This goal was to improve my ability to make software go faster. I was able to achieve this through Redis caching of API endpoints and database calls, learning more about SQL query optimization through using things like using b-trees to create database indexes to speed up popular queries by enabling them to run in logarithmic time instead of linear time.</p>
           </div>
         </div>
 
         <div style={goalStyles}>
           <div style={goalImgContainerStyles}>
-            <p><img src={communicationIcon} style={goalImgStyles} alt="Communication Icon" /></p>
+            <p><img src={applicationIcon} style={goalImgStyles} alt="Application Icon" /></p>
           </div>
           <div>
-          <p><strong>Improve my communication skills -</strong> The purpose of this goal was to improve the way I communicate technical information to other people. When communicating technical concepts it’s very important to explain them in a way that the other person can understand based on their background and level of understanding. If the other person comes from a non-technical background, it’s important not to use too much unnecessary technical jargon that just ends up confusing them. It’s better to break something down into simpler terms that they can understand. This is certainly a skill that needs to be developed and one that I have felt develop throughout my time at Cast, both through the daily standups every morning, and my one-on-one meetings with coworkers.</p>
-          </div>
-        </div>
-
-        <div style={goalStyles}>
-          <div style={goalImgContainerStyles}>
-            <p><img src={postgresIcon} style={goalImgStyles} alt="Postgres Icon" /></p>
-          </div>
-          <div>
-          <p><strong>Improve my SQL query skills -</strong> This goal was intended to improve my ability to write SQL queries, both in terms of my ability to write high-quality queries in one-shot, but also make them very performant in how they execute when interacting with the database. For example, I went from having limited knowledge of how “join” queries work, to being able to write pretty advanced join queries by the end of my term. This allowed me to take queries that were being split up into chunks, combine them into a single query using joins, thus reducing the latency of the HTTP requests utilizing those requests, sometimes by an order of magnitude. I also learned a lot about how databases work under the hood to get a better understanding of what is going on when SQL queries are executed on a system.</p>
-          </div>
-        </div>
-
-        <div style={goalStyles}>
-          <div style={goalImgContainerStyles}>
-            <p><img src={dsaIcon} style={goalImgStyles} alt="Data Structures and Algorithms Icon" /></p>
-          </div>
-          <div>
-          <p><strong>Continue to hone my data structures and algorithms skills -</strong> This was one of my favourites. One of my favourite aspects of programming is getting to work with algorithms and data structures. Throughout my term, I was able to work with many algorithms and data structures including but not limited to binary search, depth-first search, heaps, and hash tables. Being able to take theoretical concepts that I’ve learned in school and independently, and be able to apply those concepts to a real-world system to increase efficiency and make the overall system a lot faster was a great feeling and one that excites me going into the future.</p>
-          </div>
-        </div>
-
-        <div style={goalStyles}>
-          <div style={goalImgContainerStyles}>
-            <p><img src={cleanCodeIcon} style={goalImgStyles} alt="Clean COde Icon" /></p>
-          </div>
-          <div>
-          <p><strong>Improve my ability to write clean code -</strong> This goal was important as well. Being able to write clean, well-written code that is easy to understand is very important to me. This is also something that will be more and more important as I progress throughout my career. This includes being able to write code for other people and not just yourself so that other people can take your code, build upon it and refactor it. This is an invaluable skill to have and a skill I was able to improve upon during my term. Some examples include writing expressive variable names, writing concise functions that emphasized code-reuse throughout the application and using just the right amount of abstraction when writing components so that these same components could be used elsewhere in the application when the time arose. I look forward to continuing to improve this ability in the future.</p>
+          <p><strong>Improve overall application development skills -</strong> The purpose of this goal was to improve my overall software development skills, especially as it pertains to application development. During the first month of the work term, I did a lot of programming. This was needed to get code that was written several years ago in tip-top shape to be used in a modern production environment. This meant transforming the core of the mobile application and rewriting/refactoring a lot of the core functionality. When my work transitioned over to working full-time with the software team at Greenland, my work was more focused on the system design side of things, rather than strictly programming. Having said that, I still managed to get my hands dirty and dig into the code base, fixing bugs and refactoring the software for the sake of performance.</p>
           </div>
         </div>
 
         <h2 style={h2Styles}>Conclusions</h2>
 
-        <p>Working at Cast was a wonderful opportunity to work with great people and great technology. Throughout my co-op term, I’ve been able to grow tremendously, both as a person and as a software developer. This is one co-op term that I will remember for a long time.</p>
+        <p>Working at Greenland was an excellent opportunity to work with great technology and even better people. Throughout the co-op term, I’ve been able to grow tremendously, both as a person and as a software developer. I look forward to joining them again for my winter 2023 co-op.</p>
 
         <h2 style={h2Styles}>Acknowledgments</h2>
 
-        <p>I would like to thank George Boutsalis, David Banwat, and Graydyn Young for originally hiring me on to the team and giving me the opportunity to work at Cast. I would also like to thank Chance Squires for helping to make me a better front-end developer, especially when it comes to React and React Native.</p>
+        <p>I would like to thank Mark Palmer and Trevor Boston for originally hiring me onto the team. I’d also like to thank the rest of the software development team for being great coworkers to work with.</p>
       </div>
     </main>
   )
